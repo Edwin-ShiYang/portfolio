@@ -49,7 +49,7 @@ const Banner: React.FC<BannerProps> = ({ className }) => {
         </h1>
 
         <div className="text-center my-5">
-          Software Developer | Full Stack Developer | Front-end Developer
+          Game Developer | Software Developer | Full Stack Developer
         </div>
 
         <p className="max-w-5xl">
@@ -66,9 +66,8 @@ const Banner: React.FC<BannerProps> = ({ className }) => {
         <div className="flex gap-5 item-center mt-8 justify-center md:justify-start">
           <div className="flex item-center gap-3">
             <img src="position.png" alt="position..." width={20} height={20} />
-            <span>Canada</span>
+            <span>Earth</span>
           </div>
-
           {/* <IconButton
             url={"https://www.linkedin.com/in/yang-shi-2781b015b/"}
             title={"linkedin"}

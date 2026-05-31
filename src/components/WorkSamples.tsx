@@ -7,6 +7,16 @@ import { Button } from "./ui/button";
 const projects = [
   {
     id: 1,
+    date: "2026/05",
+    title: "DFS",
+    imgSrc: "dfs/preview.png",
+    iconSrc: "c++.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    to: "/work-samples/DFS",
+  },
+  {
+    id: 2,
     date: "2023/05",
     title: "Library Management System",
     imgSrc: "lms/preview.png",
@@ -16,7 +26,7 @@ const projects = [
     to: "/work-samples/library-management-system",
   },
   {
-    id: 2,
+    id: 3,
     date: "2024/01",
     title: "Twitter Clone",
     imgSrc: "tc/preview.png",
@@ -26,7 +36,7 @@ const projects = [
     to: "/work-samples/twitter-clone",
   },
   {
-    id: 3,
+    id: 4,
     date: "2019/11",
     title: "Real-time Chat Application",
     imgSrc: "rca/preview.png",
@@ -34,26 +44,6 @@ const projects = [
     description:
       "My project focuses on developing a real-time chat application designed to enhance user interaction through instant messaging capabilities. This application aims to provide a seamless experience for users, whether for personal conversations or professional collaborations.",
     to: "/work-samples/real-time-chat-application",
-  },
-  {
-    id: 4,
-    date: "2024/07",
-    title: "Shadow Knight",
-    imgSrc: "sk/preview.png",
-    iconSrc: "unreal.png",
-    description:
-      " Shadow Knight is a fast-paced 2D platform where players navigate through dark, atmospheric levels filled with enemies. The game follows the journey of a shadow warrior who fights against evil creatures.",
-    to: "/work-samples/shadow-knight",
-  },
-  {
-    id: 5,
-    date: "2024/08",
-    title: "Legend of Wukong",
-    imgSrc: "low/preview.png",
-    iconSrc: "unreal.png",
-    description:
-      "This game is an action-packed RPG inspired by Journey to the West, a classical Chinese mythological tale. Players take on the role of a legendary warrior, embarking on a quest through mystical lands, battling demons and mythical creatures using fast-paced, skill-based combat mechanics.",
-    to: "/work-samples/legend-of-wukong",
   },
 ];
 

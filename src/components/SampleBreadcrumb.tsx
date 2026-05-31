@@ -30,6 +30,15 @@ const SampleBreadcrumb = () => {
               <ChevronDownIcon className="h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
+              <DropdownMenuItem onClick={() => navigate("/work-samples/DFS")}>
+                DFS
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate("/work-samples/TGP1")}>
+                TGP1
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate("/work-samples/TGP2")}>
+                TGP2
+              </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() =>
                   navigate("/work-samples/library-management-system")
@@ -49,18 +58,6 @@ const SampleBreadcrumb = () => {
                 }
               >
                 Real-time Chat Application
-              </DropdownMenuItem>
-
-              <DropdownMenuItem
-                onClick={() => navigate("/work-samples/shadow-knight")}
-              >
-                Shadow Knight
-              </DropdownMenuItem>
-
-              <DropdownMenuItem
-                onClick={() => navigate("/work-samples/legend-of-wukong")}
-              >
-                Legend of Wukong
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

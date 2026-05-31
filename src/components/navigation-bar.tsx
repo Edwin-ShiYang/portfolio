@@ -13,6 +13,12 @@ import { useNavigate } from "react-router-dom";
 
 const webComponents: { title: string; href: string; description: string }[] = [
   {
+    title: "DFS",
+    href: "/work-samples/DFS",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
     title: "Library Management System",
     href: "/work-samples/library-management-system",
     description:
@@ -34,16 +40,16 @@ const webComponents: { title: string; href: string; description: string }[] = [
 
 const gameComponents: { title: string; href: string; description: string }[] = [
   {
-    title: "Shadow Knight",
-    href: "/work-samples/shadow-knight",
+    title: "TGP1",
+    href: "/work-samples/TGP1",
     description:
-      "Shadow Knight is a fast-paced 2D platform where players navigate through dark, atmospheric levels filled with enemies. The game follows the journey of a shadow warrior who fights against evil creatures.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    title: "Legend of Wukong",
-    href: "/work-samples/legend-of-wukong",
+    title: "TGP2",
+    href: "/work-samples/TGP2",
     description:
-      "This game is an action-packed RPG inspired by Journey to the West, a classical Chinese mythological tale. Players take on the role of a legendary warrior, embarking on a quest through mystical lands, battling demons and mythical creatures using fast-paced, skill-based combat mechanics.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
 
@@ -55,7 +61,7 @@ export function NavigationBar() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Web Development</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Individual work</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {webComponents.map((component) => (
@@ -72,7 +78,7 @@ export function NavigationBar() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Game Development</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Teamwork</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {gameComponents.map((component) => (
@@ -104,7 +110,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
+            className,
           )}
           {...props}
         >
