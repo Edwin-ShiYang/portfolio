@@ -12,8 +12,28 @@ const projects = [
     imgSrc: "dfs/preview.png",
     iconSrc: "c++.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "A personal project focused on loading FBX files into a custom engine, constructing static and skeletal meshes from scratch, and implementing an animation system with idle, walk, and run states.",
     to: "/work-samples/DFS",
+  },
+  {
+    id: 5,
+    date: "2026",
+    title: "TGP2",
+    imgSrc: "tgp2/temp..png",
+    iconSrc: "unreal.png",
+    description:
+      "Hamsterballin is an arcade racing game where players race as hamsters rolling inside balls. Responsible for race logic including player position tracking, grand prix mode, and race UI such as the leaderboard.",
+    to: "/work-samples/TGP2",
+  },
+  {
+    id: 6,
+    date: "2025",
+    title: "TGP1",
+    imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_07.png",
+    iconSrc: "csharp.png",
+    description:
+      "Kill the Makers is a 2D Unity platformer featuring checkpoint respawning, enemy AI (detection, chase, flee, and attack), a player energy system, double jump and dash mechanics, and a pause menu UI.",
+    to: "/work-samples/TGP1",
   },
   {
     id: 2,
@@ -73,9 +93,11 @@ const WorkSamples = () => {
             icon={<img className="rounded-full" src={project.iconSrc} />}
           >
             <div>
-              <div className="py-5">
-                <img src={project?.imgSrc} alt="..." />
-              </div>
+              {project.imgSrc && (
+                <div className="py-5">
+                  <img src={project.imgSrc} alt="..." />
+                </div>
+              )}
 
               <h3 className="vertical-timeline-element-title text-xl gradient_text">
                 {project?.title}

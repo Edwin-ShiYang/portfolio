@@ -7,11 +7,18 @@ const data = [
     details: [
       {
         title: "Background",
+        description:
+          "AnimViewer3D is a personal project focused on loading any FBX file into a game engine to improve future development and workflow flexibility. The project explores how to construct static meshes and skeletal meshes from scratch, implements an animation system capable of sampling data over time, and sets up a level showcasing different animation types such as idle, walk, and run. The project also dives deeper into transformation matrices and keyframes.",
+        imgSrc: "dfs/preview.png",
+      },
+      {
+        title: "Gameplay",
         description: "",
+        imgSrc: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlkdHFwd29wbnVhY2owbjZiaDE2ZWJmeHUwd2d4ZHk3aTU5dnBhcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wQclSvQQKtObPx9UKY/giphy.gif",
       },
       {
         title: "Role",
-        description: "",
+        description: "Solo Developer",
       },
       {
         title: "Programming Languages",
@@ -22,14 +29,28 @@ const data = [
         ),
       },
       {
-        title: "Development Environment",
-        description: (
-          <ul className="list-disc ml-10">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-        ),
+        title: "FBX File Loading",
+        description:
+          "Implemented support for loading any FBX file into the engine, enabling flexible asset import for future development workflows.",
+        imgSrc: "",
+      },
+      {
+        title: "Static Mesh & Skeletal Mesh",
+        description:
+          "Built the pipeline for constructing both static meshes and skeletal meshes from scratch, establishing the foundation for rendering and animation.",
+        imgSrc: "",
+      },
+      {
+        title: "Animation System",
+        description:
+          "Implemented an animation system that samples keyframe data over time, supporting smooth playback of skeletal animations driven by transformation matrices.",
+        imgSrc: "",
+      },
+      {
+        title: "Animation Types",
+        description:
+          "Set up a level demonstrating different animation states including idle, walk, and run.",
+        imgSrc: "",
       },
     ],
   },
@@ -38,17 +59,18 @@ const data = [
     details: [
       {
         title: "Background",
-        description: "",
+        description:
+          "Kill the Makers is a 2D platformer developed in Unity. Players navigate through levels, defeat enemies, interact with switches, and respawn at checkpoints. The game features responsive controls, enemy AI, an energy system, and a polished UI.",
       },
       {
         title: "Role",
-        description: "",
+        description: "Game Developer",
       },
       {
         title: "Programming Languages",
         description: (
           <ul className="list-disc ml-10">
-            <li>C++</li>
+            <li>C#</li>
           </ul>
         ),
       },
@@ -56,9 +78,69 @@ const data = [
         title: "Development Environment",
         description: (
           <ul className="list-disc ml-10">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li>Unity</li>
+            <li>Perforce</li>
+          </ul>
+        ),
+      },
+      {
+        title: "Checkpoint System",
+        description:
+          "When the player passes the checkpoint, it turns green. After that, no matter how the player dies, they will respawn at this checkpoint.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_02.png",
+      },
+      {
+        title: "Enemy Avoidance Using Raycast",
+        description:
+          "A raycast is used to check whether the player is near an enemy. If so, a fleeing animation is played, and the character runs away in the opposite direction.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_08.png",
+      },
+      {
+        title: "Switch Interaction Using Collision Box",
+        description:
+          "A collision box is used to check whether the player is within the switch's range. If so, the player can activate or deactivate the switch.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_06.png",
+      },
+      {
+        title: "Enemy Player Detection and Chase Behavior",
+        description:
+          "A raycast is used to detect the player's position. If the player is within the enemy's detectable range, the enemy will run toward the player.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_05.png",
+      },
+      {
+        title: "Enemy Attack Logic",
+        description:
+          "When the enemy reaches the player and enters attack range, it performs an attack. The attack is triggered only when both the chase condition and distance requirement are met, preventing the enemy from attacking from an unrealistic distance.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_04.png",
+      },
+      {
+        title: "Energy System",
+        description:
+          "When the player kills an enemy, the system restores a portion of the player's energy. This rewards aggressive gameplay and encourages engaging with enemies rather than avoiding them.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_03.png",
+      },
+      {
+        title: "Double Jump and Dash",
+        description:
+          "Implemented a double jump mechanic that allows the player to jump a second time while in the air. Also implemented a dash ability that lets the player quickly move a short distance in a chosen direction.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_07.png",
+      },
+      {
+        title: "UI System",
+        description:
+          "Created a pause menu that lets the player temporarily halt the game. When opened, the menu provides options to Resume, return to the Main Menu, or Quit.",
+        imgSrc: "tgp1/YShi_TGP1_KilltheMakers_Screenshot_01.png",
+      },
+      {
+        title: "Personal Roles and Responsibilities",
+        description: (
+          <ul className="list-disc ml-10 space-y-1">
+            <li>Checkpoint system — implemented player respawn points, allowing checkpoints to activate and update the respawn location.</li>
+            <li>Enemy AI behaviors — implemented enemy detection, chase, fleeing, and attack mechanics using raycasts and distance checks.</li>
+            <li>Player controller — developed double jump and dash mechanics, including input handling and Rigidbody movement.</li>
+            <li>Energy system — managed energy consumption for abilities and energy restoration upon defeating enemies.</li>
+            <li>UI system — created a simple UI to display player energy and menus.</li>
+            <li>Pause menu — implemented a functional pause menu that disables player input and allows Resume, back to main menu, and Quit options.</li>
           </ul>
         ),
       },
@@ -69,17 +151,18 @@ const data = [
     details: [
       {
         title: "Background",
-        description: "",
+        description:
+          "Hamsterballin is an arcade racing game where players race as hamsters rolling inside balls through creative tracks. The game features competitive multiplayer racing with a grand prix mode and dynamic leaderboards.",
       },
       {
         title: "Role",
-        description: "",
+        description: "Game Developer",
       },
       {
         title: "Programming Languages",
         description: (
           <ul className="list-disc ml-10">
-            <li>C++</li>
+            <li>Unreal Engine</li>
           </ul>
         ),
       },
@@ -87,9 +170,36 @@ const data = [
         title: "Development Environment",
         description: (
           <ul className="list-disc ml-10">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li>Unreal Engine</li>
+            <li>Perforce</li>
+          </ul>
+        ),
+      },
+      {
+        title: "Player Position Tracking",
+        description:
+          "Real-time race position tracking that calculates each player's standing throughout the race based on progress along the track.",
+        imgSrc: "tgp2/temp..png",
+      },
+      {
+        title: "Grand Prix Mode",
+        description:
+          "A grand prix system that manages multi-race series, accumulates points across races, and determines the overall series winner.",
+        imgSrc: "tgp2/temp..png",
+      },
+      {
+        title: "Leaderboard UI",
+        description:
+          "An in-race leaderboard UI that displays live player standings and updates dynamically as positions change during the race.",
+        imgSrc: "tgp2/temp..png",
+      },
+      {
+        title: "Roles and Responsibilities",
+        description: (
+          <ul className="list-disc ml-10 space-y-1">
+            <li>Race position system — real-time player ranking logic based on track progress.</li>
+            <li>Grand Prix mode — multi-race series flow, point accumulation, and series result tracking.</li>
+            <li>Race UI — leaderboard and race-related UI elements that reflect live race state.</li>
           </ul>
         ),
       },

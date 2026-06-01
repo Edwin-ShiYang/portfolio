@@ -12,6 +12,7 @@ import RootLayout from "@/layouts/RootLayout";
 import Project from "./routes/project";
 import EducationsPage from "./routes/educations";
 import ContactPage from "./routes/contact";
+import PersonalPage from "./routes/personal";
 const router = createHashRouter([
   {
     path: "/",
@@ -44,6 +45,10 @@ const router = createHashRouter([
       {
         path: "contact/",
         element: <ContactPage />,
+      },
+      {
+        path: "personal/",
+        element: <PersonalPage />,
       },
     ],
   },

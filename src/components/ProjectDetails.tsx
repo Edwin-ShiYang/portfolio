@@ -13,7 +13,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ details }) => {
       <div className="max-w-[800px] mx-auto">
         <SampleBreadcrumb />
 
-        <div className="space-y-10">
+        <div className="space-y-12">
           {details?.map((detail) => (
             <ProjectDetail key={detail?.title} detail={detail} />
           ))}

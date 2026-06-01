@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import Drawer from "./drawer";
 import { NavigationBar } from "./navigation-bar";
 
-const links = ["Home", "Work Samples", "Skills", "Educations", "Contact"];
+const links = ["Home", "Work Samples", "Skills", "Educations", "Personal", "Contact"];
 
 const Header = () => {
   const navigate = useNavigate();
