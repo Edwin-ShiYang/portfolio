@@ -6,7 +6,7 @@ const WorkSamplesPage = () => {
   return (
     <div>
       <Container>
-        <Heading title="Work Samples" />
+        <Heading title="Timeline" />
         <WorkSamples />
       </Container>
     </div>

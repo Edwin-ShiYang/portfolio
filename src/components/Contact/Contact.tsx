@@ -23,11 +23,6 @@ const Contact: React.FC<ContactProps> = ({ className }) => {
               <img src="email.png" alt="email..." width={25} height={25} />
               <p>edwinshi.work@gmail.com</p>
             </div>
-
-            <div className="flex gap-2 justify-center md:justify-start">
-              <img src="phone.png" alt="phone..." width={25} height={25} />
-              <p>817-513-9582</p>
-            </div>
           </div>
         </div>
       </div>

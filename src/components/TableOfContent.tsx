@@ -9,7 +9,7 @@ interface TableOfContentProps {
 
 const TableOfContent: React.FC<TableOfContentProps> = ({ details }) => {
   return (
-    <div className="fixed hidden xl:block left-6 top-28">
+    <div className="fixed hidden xl:block left-6 top-30">
       <div className="flex flex-col">
         {details.map((detail) => (
           <Button

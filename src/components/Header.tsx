@@ -3,7 +3,14 @@ import { Button } from "./ui/button";
 import Drawer from "./drawer";
 import { NavigationBar } from "./navigation-bar";
 
-const links = ["Home", "Work Samples", "Skills", "Educations", "Personal", "Contact"];
+const links = [
+  "Home",
+  "Timeline",
+  "Skills",
+  "Education",
+  "Personal",
+  "Contact",
+];
 
 const Header = () => {
   const navigate = useNavigate();
@@ -12,8 +19,10 @@ const Header = () => {
     switch (link) {
       case "Home":
         return "/";
-      case "Work Samples":
+      case "Timeline":
         return "/work-samples";
+      case "Education":
+        return "/educations";
       default:
         return `/${link.toLocaleLowerCase()}`;
     }
@@ -23,7 +32,7 @@ const Header = () => {
     <div className="sticky top-0 z-40 border-b bg-zinc-950">
       <div className="flex items-center justify-center py-5 ">
         <div className="flex-1">
-          <span className="font-bold text-xl tracking-widest whitespace-nowrap gradient_text">
+          <span className="font-extrabold text-2xl md:text-3xl tracking-widest whitespace-nowrap gradient_text cursor-pointer hover:opacity-80 transition-opacity">
             {"<YS />"}
           </span>
         </div>

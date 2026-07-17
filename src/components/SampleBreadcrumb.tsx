@@ -19,6 +19,13 @@ import {
 const SampleBreadcrumb = () => {
   const navigate = useNavigate();
   const params = useParams();
+  const projectName =
+    params.projectId === "DFS"
+      ? "AnimView3D"
+      : params.projectId
+          ?.split("-")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ");
 
   return (
     <Breadcrumb className="flex justify-center mb-5">
@@ -31,7 +38,7 @@ const SampleBreadcrumb = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
               <DropdownMenuItem onClick={() => navigate("/work-samples/DFS")}>
-                DFS
+                AnimView3D
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => navigate("/work-samples/TGP1")}>
                 TGP1
@@ -67,10 +74,7 @@ const SampleBreadcrumb = () => {
         </BreadcrumbSeparator>
         <BreadcrumbItem>
           <BreadcrumbPage className="w-[185px]">
-            {params.projectId
-              ?.split("-")
-              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(" ")}
+            {projectName}
           </BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>

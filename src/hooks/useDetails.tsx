@@ -8,13 +8,14 @@ const data = [
       {
         title: "Background",
         description:
-          "AnimViewer3D is a personal project focused on loading any FBX file into a game engine to improve future development and workflow flexibility. The project explores how to construct static meshes and skeletal meshes from scratch, implements an animation system capable of sampling data over time, and sets up a level showcasing different animation types such as idle, walk, and run. The project also dives deeper into transformation matrices and keyframes.",
-        imgSrc: "dfs/preview.png",
+          "AnimView3D is a personal project focused on loading any FBX file into a game engine to improve future development and workflow flexibility. The project explores how to construct static meshes and skeletal meshes from scratch, implements an animation system capable of sampling data over time, and sets up a level showcasing different animation types such as idle, walk, and run. The project also dives deeper into transformation matrices and keyframes.",
+        imgSrc: "dfs/Screenshot 2026-07-16 185749.png",
       },
       {
-        title: "Gameplay",
-        description: "",
-        imgSrc: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlkdHFwd29wbnVhY2owbjZiaDE2ZWJmeHUwd2d4ZHk3aTU5dnBhcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wQclSvQQKtObPx9UKY/giphy.gif",
+        title: "Animation Preview",
+        description:
+          "A captured animation preview showing imported character meshes playing sampled skeletal animation in the custom viewer.",
+        imgSrc: "dfs/Animation2.gif",
       },
       {
         title: "Role",
@@ -57,6 +58,12 @@ const data = [
   {
     name: "TGP1",
     details: [
+      {
+        title: "Game Trailer",
+        description:
+          "Watch gameplay footage from Kill the Makers, the TGP1 team project.",
+        imgSrc: "https://www.youtube.com/embed/FTkrYJqxev0",
+      },
       {
         title: "Background",
         description:
@@ -150,6 +157,18 @@ const data = [
     name: "TGP2",
     details: [
       {
+        title: "Game Trailer",
+        description:
+          "Watch the official gameplay trailer to see Hamsterballin' in action!",
+        imgSrc: "https://www.youtube.com/embed/ogLB5EIMdcw",
+      },
+      {
+        title: "Gameplay Screenshot",
+        description:
+          "A race in progress from Hamsterballin, showing multiplayer track action, race position, lap count, timer, and speed UI.",
+        imgSrc: "tgp2/tgp2.png",
+      },
+      {
         title: "Background",
         description:
           "Hamsterballin is an arcade racing game where players race as hamsters rolling inside balls through creative tracks. The game features competitive multiplayer racing with a grand prix mode and dynamic leaderboards.",
@@ -179,19 +198,16 @@ const data = [
         title: "Player Position Tracking",
         description:
           "Real-time race position tracking that calculates each player's standing throughout the race based on progress along the track.",
-        imgSrc: "tgp2/temp..png",
       },
       {
         title: "Grand Prix Mode",
         description:
           "A grand prix system that manages multi-race series, accumulates points across races, and determines the overall series winner.",
-        imgSrc: "tgp2/temp..png",
       },
       {
         title: "Leaderboard UI",
         description:
           "An in-race leaderboard UI that displays live player standings and updates dynamically as positions change during the race.",
-        imgSrc: "tgp2/temp..png",
       },
       {
         title: "Roles and Responsibilities",

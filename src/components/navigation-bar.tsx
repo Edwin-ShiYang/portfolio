@@ -13,10 +13,10 @@ import { useNavigate } from "react-router-dom";
 
 const webComponents: { title: string; href: string; description: string }[] = [
   {
-    title: "DFS",
+    title: "AnimView3D",
     href: "/work-samples/DFS",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "A solo C++ engine project that loads FBX files, builds static and skeletal meshes, and demonstrates idle, walk, and run animations.",
   },
   {
     title: "Library Management System",
@@ -43,13 +43,13 @@ const gameComponents: { title: string; href: string; description: string }[] = [
     title: "TGP1",
     href: "/work-samples/TGP1",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "A team project showcasing collaborative game development and multiplayer mechanics with innovative gameplay features.",
   },
   {
-    title: "TGP2",
+    title: "TGP2 - Hamster Ballin'",
     href: "/work-samples/TGP2",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "An arcade racing game featuring hamsters in balls with competitive multiplayer, grand prix mode, and dynamic leaderboards.",
   },
 ];
 

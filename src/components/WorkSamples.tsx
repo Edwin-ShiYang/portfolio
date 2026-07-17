@@ -8,8 +8,8 @@ const projects = [
   {
     id: 1,
     date: "2026/05",
-    title: "DFS",
-    imgSrc: "dfs/preview.png",
+    title: "AnimView3D",
+    imgSrc: "dfs/Screenshot 2026-07-16 185749.png",
     iconSrc: "c++.png",
     description:
       "A personal project focused on loading FBX files into a custom engine, constructing static and skeletal meshes from scratch, and implementing an animation system with idle, walk, and run states.",
@@ -19,7 +19,7 @@ const projects = [
     id: 5,
     date: "2026",
     title: "TGP2",
-    imgSrc: "tgp2/temp..png",
+    imgSrc: "tgp2/tgp2.png",
     iconSrc: "unreal.png",
     description:
       "Hamsterballin is an arcade racing game where players race as hamsters rolling inside balls. Responsible for race logic including player position tracking, grand prix mode, and race UI such as the leaderboard.",

@@ -1,3 +1,4 @@
+import { Github, Linkedin } from "lucide-react";
 import Container from "../Container";
 
 interface PersonalProps {
@@ -6,16 +7,14 @@ interface PersonalProps {
 
 const socials = [
   {
-    href: "https://github.com/EdWIN1021",
-    icon: "github.png",
+    href: "https://github.com/Edwin-ShiYang",
     label: "GitHub",
-    fallbackText: "GH",
+    Icon: Github,
   },
   {
-    href: "https://www.linkedin.com/in/yang-shi-2781b015b/",
-    icon: "linkedin.png",
+    href: "https://www.linkedin.com/in/yang-shi-2781b015b?trk=people-guest_people_search-card",
     label: "LinkedIn",
-    fallbackText: "LI",
+    Icon: Linkedin,
   },
 ];
 
@@ -29,60 +28,45 @@ const Personal: React.FC<PersonalProps> = ({ className }) => {
       <div className="space-y-6 max-w-2xl">
         <div className="space-y-6">
           <p className="leading-relaxed">
-            Hi, I'm <span className="font-semibold text-white">Yang Shi (Edwin)</span> — a
-            passionate developer with a love for crafting clean, performant software. My
-            journey spans game development, full-stack web applications, and everything in
-            between.
+            Hi, I'm{" "}
+            <span className="font-semibold text-white">Yang Shi (Edwin)</span>{" "}
+            - a passionate developer with a love for crafting clean, performant
+            software. My journey spans game development, full-stack web
+            applications, and everything in between.
           </p>
           <p className="leading-relaxed">
-            I thrive on turning complex problems into elegant solutions. Whether it's
-            architecting a backend API, designing intuitive UIs, or building game mechanics
-            from scratch, I bring curiosity and care to every line of code.
+            I thrive on turning complex problems into elegant solutions. Whether
+            it's architecting a backend API, designing intuitive UIs, or building
+            game mechanics from scratch, I bring curiosity and care to every line
+            of code.
           </p>
           <p className="leading-relaxed">
-            Outside of work I'm always exploring — new technologies, creative projects, or
-            just a good playlist.
+            Outside of work I'm always exploring new technologies, creative
+            projects, or just a good playlist.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">
-            {socials.map((s) => (
+            {socials.map(({ href, label, Icon }) => (
               <a
-                key={s.label}
-                href={s.href}
+                key={label}
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-700 hover:border-zinc-400 transition-colors"
               >
-                <img
-                  src={s.icon}
-                  alt={s.label}
-                  width={20}
-                  height={20}
-                  onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).style.display = "none";
-                  }}
-                />
-                <span className="text-sm">{s.label}</span>
+                <Icon aria-hidden="true" className="h-5 w-5" />
+                <span className="text-sm">{label}</span>
               </a>
             ))}
           </div>
 
           <div className="flex flex-wrap gap-4 pt-2">
             <a
-              href="resume.pdf"
-              download="YangShi-Resume.pdf"
+              href="Yang_Shi_Resume.pdf"
+              download="Yang_Shi_Resume.pdf"
               className="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-700 hover:border-zinc-400 transition-colors text-sm"
             >
-              <span>📄</span>
               Resume
-            </a>
-            <a
-              href="cover-letter.pdf"
-              download="YangShi-CoverLetter.pdf"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-700 hover:border-zinc-400 transition-colors text-sm"
-            >
-              <span>📝</span>
-              Cover Letter
             </a>
           </div>
         </div>
