@@ -10,10 +10,10 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ details }) => {
   return (
     <>
       <TableOfContent details={details} />
-      <div className="max-w-[800px] mx-auto">
+      <div className="max-w-[860px] mx-auto">
         <SampleBreadcrumb />
 
-        <div className="space-y-12">
+        <div className="space-y-14">
           {details?.map((detail) => (
             <ProjectDetail key={detail?.title} detail={detail} />
           ))}

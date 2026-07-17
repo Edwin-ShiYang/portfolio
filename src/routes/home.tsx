@@ -1,4 +1,7 @@
 import Banner from "../components/Banner";
+import Carousel from "../components/Carousel";
+import HomeSections from "../components/HomeSections";
+import RecruiterSnapshot from "../components/RecruiterSnapshot";
 import { motion } from "framer-motion";
 
 const HomePage = () => {
@@ -11,6 +14,11 @@ const HomePage = () => {
       exit={{ opacity: 1 }}
     >
       <Banner />
+      <RecruiterSnapshot />
+      <div className="mt-14">
+        <Carousel />
+      </div>
+      <HomeSections />
     </motion.div>
   );
 };

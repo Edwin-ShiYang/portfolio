@@ -21,26 +21,28 @@ const socials = [
 const Personal: React.FC<PersonalProps> = ({ className }) => {
   return (
     <Container className={className}>
-      <h2 className="gradient_text font-bold text-[32px] mb-8" id="Personal">
+      <h2 className="portfolio-heading-lg mb-8 text-[#d6c6a8]" id="Personal">
         About Me
       </h2>
 
-      <div className="space-y-6 max-w-2xl">
-        <div className="space-y-6">
-          <p className="leading-relaxed">
+      <div className="max-w-3xl portfolio-body">
+        <div className="space-y-5">
+          <p>
             Hi, I'm{" "}
-            <span className="font-semibold text-white">Yang Shi (Edwin)</span>{" "}
+            <span className="font-semibold text-[#f2efe8]">
+              Yang Shi (Edwin)
+            </span>{" "}
             - a passionate developer with a love for crafting clean, performant
             software. My journey spans game development, full-stack web
             applications, and everything in between.
           </p>
-          <p className="leading-relaxed">
+          <p>
             I thrive on turning complex problems into elegant solutions. Whether
             it's architecting a backend API, designing intuitive UIs, or building
             game mechanics from scratch, I bring curiosity and care to every line
             of code.
           </p>
-          <p className="leading-relaxed">
+          <p>
             Outside of work I'm always exploring new technologies, creative
             projects, or just a good playlist.
           </p>
@@ -52,7 +54,7 @@ const Personal: React.FC<PersonalProps> = ({ className }) => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-700 hover:border-zinc-400 transition-colors"
+                className="flex items-center gap-2 rounded-md border border-[#302d27] px-4 py-2 text-[#f2efe8] transition-colors hover:border-[#8e9a91] hover:text-[#d6c6a8]"
               >
                 <Icon aria-hidden="true" className="h-5 w-5" />
                 <span className="text-sm">{label}</span>
@@ -64,7 +66,7 @@ const Personal: React.FC<PersonalProps> = ({ className }) => {
             <a
               href="Yang_Shi_Resume.pdf"
               download="Yang_Shi_Resume.pdf"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-700 hover:border-zinc-400 transition-colors text-sm"
+              className="flex items-center gap-2 rounded-md border border-[#302d27] px-4 py-2 text-sm text-[#f2efe8] transition-colors hover:border-[#8e9a91] hover:text-[#d6c6a8]"
             >
               Resume
             </a>

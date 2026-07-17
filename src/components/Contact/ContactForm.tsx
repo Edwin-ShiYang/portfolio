@@ -38,7 +38,7 @@ const ContactForm = () => {
           Your Name
         </label>
         <input
-          className="w-full bg-[#161513] p-2 outline-none"
+          className="w-full rounded-md border border-[#302d27] bg-[#11100e] p-2 text-[#f2efe8] outline-none focus:border-[#d6c6a8]"
           type="text"
           id="name"
           name="name"
@@ -54,7 +54,7 @@ const ContactForm = () => {
           Your Email
         </label>
         <input
-          className="w-full bg-[#161513] p-2 outline-none"
+          className="w-full rounded-md border border-[#302d27] bg-[#11100e] p-2 text-[#f2efe8] outline-none focus:border-[#d6c6a8]"
           type="email"
           id="email"
           name="email"
@@ -70,7 +70,7 @@ const ContactForm = () => {
           Tell me a bit more what you are looking for?
         </label>
         <textarea
-          className="w-full bg-[#161513] p-2 outline-none"
+          className="w-full rounded-md border border-[#302d27] bg-[#11100e] p-2 text-[#f2efe8] outline-none focus:border-[#d6c6a8]"
           id="info"
           name="info"
           value={fields.info}
@@ -80,11 +80,7 @@ const ContactForm = () => {
       </div>
 
       <button
-        className="px-4 py-2 rounded-full w-full"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, #b16cea, #ff5e69, #ff8a56, #ffa84b)",
-        }}
+        className="w-full rounded-full bg-[#d6c6a8] px-4 py-2 font-semibold text-[#0b0d0e] transition hover:bg-[#f2efe8]"
       >
         SUBMIT NOW
       </button>

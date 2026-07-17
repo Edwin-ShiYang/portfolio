@@ -4,15 +4,15 @@ interface DetailProps {
 
 const ProjectDetail: React.FC<DetailProps> = ({ detail }) => {
   return (
-    <div className="pb-10 border-b border-zinc-800 last:border-b-0 last:pb-0">
+    <div className="pb-10 border-b border-[#302d27] last:border-b-0 last:pb-0">
       <h2
-        className="font-semibold text-2xl pl-3 border-l-4 border-zinc-400"
+        className="inline-flex rounded-md border border-[#302d27] bg-[#161513] px-4 py-2 portfolio-heading-md"
         id={detail?.title}
       >
         {detail.title}
       </h2>
 
-      <p className="my-5">{detail?.description}</p>
+      <p className="my-5 portfolio-body">{detail?.description}</p>
 
       {detail?.imgSrc && (
         <>

@@ -10,10 +10,10 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
 }) => {
   return (
     <div className={`${position}`}>
-      <div className="lg:max-w-[450px] p-6 bg-[#1c1c22] mt-5">
+      <div className="lg:max-w-[450px] p-6 bg-[#161513] mt-5">
         <h3>{company}</h3>
 
-        <div className="flex text-xs text-[#d9dbdb] font-light">
+        <div className="flex text-xs text-[#c9c1b2] font-light">
           <p className="flex-1">{title}</p>
           <p>{duration}</p>
         </div>

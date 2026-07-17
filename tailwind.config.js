@@ -3,9 +3,9 @@ export default {
     darkMode: ["class"],
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-  	extend: {
-  		backgroundImage: {
-  			'text-gradient': 'linear-gradient(to right, #b16cea, #ff5e69, #ff8a56, #ffa84b)'
+  		extend: {
+  			backgroundImage: {
+  			'text-gradient': 'linear-gradient(to right, #d6c6a8, #f2efe8)'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

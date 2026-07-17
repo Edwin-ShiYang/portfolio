@@ -54,7 +54,7 @@ const Timeline = () => {
               className="vertical-timeline-element--work"
               contentStyle={{}}
               contentArrowStyle={{
-                borderRight: "7px solid  #1c1c22",
+                borderRight: "7px solid #161513",
               }}
               date={item.duration}
               iconStyle={{}}

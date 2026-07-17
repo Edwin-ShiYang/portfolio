@@ -77,14 +77,19 @@ const WorkSamples = () => {
           <VerticalTimelineElement
             key={project?.title}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#1c1c22", color: "#fff" }}
+            contentStyle={{
+              background: "#161513",
+              border: "1px solid #302d27",
+              color: "#f2efe8",
+            }}
             contentArrowStyle={{
-              borderRight: "7px solid  #1c1c22",
+              borderRight: "7px solid #302d27",
             }}
             date={project?.date}
             iconStyle={{
-              background: "#1c1c22",
-              color: "#fff",
+              background: "#161513",
+              border: "1px solid #302d27",
+              color: "#f2efe8",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -99,11 +104,11 @@ const WorkSamples = () => {
                 </div>
               )}
 
-              <h3 className="vertical-timeline-element-title text-xl gradient_text">
+              <h3 className="vertical-timeline-element-title text-2xl font-semibold leading-tight text-[#d6c6a8]">
                 {project?.title}
               </h3>
 
-              <p>{project.description}</p>
+              <p className="mt-3 portfolio-body">{project.description}</p>
 
               <Button
                 className="mt-5"

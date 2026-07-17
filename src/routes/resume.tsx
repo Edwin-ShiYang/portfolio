@@ -9,11 +9,11 @@ const Resume = () => {
   return (
     <div>
       <Banner className="bg-[#161513]" />
-      <Skills className="bg-[#1c1c22]" />
+      <Skills className="bg-[#11100e]" />
       <Experience className="bg-[#161513]" />
-      <Projects className="bg-[#1c1c22]" />
+      <Projects className="bg-[#11100e]" />
       <Educations className="bg-[#161513]" />
-      <Contact className="bg-[#1c1c22]" />
+      <Contact className="bg-[#11100e]" />
     </div>
   );
 };
